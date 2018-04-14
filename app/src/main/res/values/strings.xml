@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NowKotlin</string>
+    <string name="disha">Disha</string>
+    <string name="hello_world_text">Disha</string>
+    <string name="toast">Toast</string>
+    <string name="count">Count</string>
+    <string name="random">Random</string>
+    <string name="tv_default">0</string>
+</resources>
