@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     fun myToast(view: View) {
         val myToast = Toast.makeText(
                 this,
-                "Hello Toast",
+                "Click the button to increase count.",
                 Toast.LENGTH_LONG
         )
         myToast.show()
