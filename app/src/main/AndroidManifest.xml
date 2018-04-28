@@ -9,14 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".base.NavigationActivity"
+            android:label="@string/title_activity_navigation_kotlin"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".part1_base.MainActivity" />
+        <activity android:name=".part1_base.SecondActivity" />
+        <activity android:name=".part2_recycler_view.view.RecyclerActivity"/>
+        <activity android:name=".part3_mvp.view.main.MVPActivity">
+
+        </activity>
     </application>
 
 </manifest>

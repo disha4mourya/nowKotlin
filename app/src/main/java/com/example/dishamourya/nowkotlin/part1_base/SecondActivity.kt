@@ -1,7 +1,8 @@
-package com.example.dishamourya.nowkotlin
+package com.example.dishamourya.nowkotlin.part1_base
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.dishamourya.nowkotlin.R
 
 class SecondActivity : AppCompatActivity() {
 
