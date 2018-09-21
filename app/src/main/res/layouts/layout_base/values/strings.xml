@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="pract_1">Pract 1</string>
-    <string name="pract_2">Pract 2</string>
-    <string name="pract_3">Pract 3</string>
+    <string name="pract_1">Count</string>
+    <string name="pract_2">Recycler View</string>
+    <string name="pract_3">Intent</string>
 </resources>
