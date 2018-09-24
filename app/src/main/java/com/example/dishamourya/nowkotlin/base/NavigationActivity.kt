@@ -16,20 +16,30 @@ import com.example.dishamourya.nowkotlin.part2_recycler_view.view.RecyclerActivi
 import com.example.dishamourya.nowkotlin.part3_mvp.view.main.MVPActivity
 import kotlinx.android.synthetic.main.activity_navigation_kotlin.*
 import kotlinx.android.synthetic.main.app_bar_navigation_kotlin.*
+import android.view.animation.AnimationUtils
+import android.view.animation.Animation
+import android.widget.TextView
+
 
 class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    val tvHomeText: TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation_kotlin)
         setSupportActionBar(toolbar)
 
+        tvHomeText != findViewById(R.id.tvHomeText)
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        val animation: Animation = AnimationUtils.loadAnimation(applicationContext,
+                R.anim.sample_anim)
+        tvHomeText?.startAnimation(animation)
     }
 
     override fun onBackPressed() {
@@ -44,14 +54,14 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.part_one -> {
-               startActivity( Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
             }
             R.id.part_two -> {
-                startActivity( Intent(this, RecyclerActivity::class.java))
+                startActivity(Intent(this, RecyclerActivity::class.java))
 
             }
             R.id.part_three -> {
-                startActivity( Intent(this, MVPActivity::class.java))
+                startActivity(Intent(this, MVPActivity::class.java))
             }
         }
 

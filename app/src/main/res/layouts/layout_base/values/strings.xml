@@ -3,4 +3,5 @@
     <string name="pract_1">Count</string>
     <string name="pract_2">Recycler View</string>
     <string name="pract_3">Intent</string>
+    <string name="home_text">Practice Kotlin from the base.</string>
 </resources>

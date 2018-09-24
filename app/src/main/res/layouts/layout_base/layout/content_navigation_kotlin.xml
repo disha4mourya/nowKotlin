@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/tvData"
+        android:id="@+id/tvHomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -22,7 +22,8 @@
         android:layout_marginTop="8dp"
         android:textSize="22sp"
         android:textColor="@color/colorText"
-        android:text="Practice Kotlin from the base."
+        android:textStyle="bold"
+        android:text="@string/home_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
